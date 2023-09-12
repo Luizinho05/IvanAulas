@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo de pedido</title>
+    </head>
+    <body>
+        <h1>Exemplo de pedido</h1>
+        <script>
+            let nome = prompt("Digite seu nome:")
+            let idade = prompt("Digite sua idade:")
+            idade = parseInt(idade)
+            const bebidaMaior = 'água';
+            const bebidaMenor = 'suco';
+            const pedido = `${nome} diz: "por favor, quero beber ${idade >= 18
+            ? bebidaMaior : bebidaMenor}"`
+
+            console.log(pedido)
+            document.write(`<p>${pedido}</p>`)
+        </script>
+    </body>
+</html>

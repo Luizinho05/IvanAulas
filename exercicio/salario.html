@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Informações sobre viagem</title>
+</head>
+<body>
+ 
+  <h1>Salário e Gastos</h1>
+    <script>
+    var salario = prompt("Entre com o valor do Salário");
+    var aluguel = prompt("Entre com o valor do Aluguel:");
+    var contas = prompt("Entre com o valor das contas");
+    var gastos = prompt("Entre com o valor dos gastos extras:");
+    
+ 
+    salario = parseFloat(salario);
+    aluguel = parseFloat(aluguel);
+    contas = parseFloat(contas);
+    gastos = parseFloat(gastos);
+ 
+    var total = salario - (aluguel+contas+gastos);
+ 
+    var resposta1 = "Seu salário mensal é: " + salario;
+    var resposta2 = "Você tem pago R$ " + aluguel + " de aluguel";
+    var resposta3 = "Você tem contas no valor de: " + contas;
+    var resposta4 = "Você também tem gastos extras de R$ " + gastos;
+    var resposta5 = "Seu saldo disponível é R$ " + total;
+ 
+    console.log(resposta1);
+    document.write("<p>" + resposta1 + "</p>");
+    console.log(resposta2);
+    document.write("<p>" + resposta2 + "</p>");
+    console.log(resposta3);
+    document.write("<p>" + resposta3 + "</p>");
+    console.log(resposta4);
+    document.write("<p>" + resposta4 + "</p>");
+    console.log(resposta5);
+    document.write("<p>" + resposta5 + "</p>");
+  </script> 
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Informações sobre viagem</title>
+</head>
+<body>
+ 
+  <h1>Informações sobre viagem</h1>
+  <script>
+    var distancia = prompt("Entre com a distância a ser percorrida (em km)");
+    var velocidade = prompt("Entre com a velocidade média da viagem (em km/h):");
+ 
+    distancia = parseFloat(distancia);
+    velocidade = parseFloat(velocidade);
+ 
+    var tempo = distancia / velocidade;
+ 
+    var resposta1 = "A distância a ser percorrida é: " + distancia + " km";
+    var resposta2 = "Seu carro está viajando com a velocidade média de: " + velocidade + " km/h";
+    var resposta3 = "O tempo estimado de viagem é de aproximadamente: " + tempo.toFixed(2) + " horas";
+ 
+    console.log(resposta1);
+    document.write("<p>" + resposta1 + "</p>");
+    console.log(resposta2);
+    document.write("<p>" + resposta2 + "</p>");
+    console.log(resposta3);
+    document.write("<p>" + resposta3 + "</p>");
+  </script> 
+</body>
+</html>
